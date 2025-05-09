@@ -1,8 +1,8 @@
+
 *{
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-    letter-spacing: 1px;
 }
 .green-section{
     background: #46B178;
@@ -66,6 +66,34 @@
     left: 117px;
     color: #333;
   }
+
+  /* Testimonials */
+  .testimonial-wrapper {
+    position: relative;
+    width: 250px;
+  }
+  
+  .testimonial-image {
+    position: absolute;
+    top: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    background-color: rgb(247, 239, 239);
+  }
+  
+  .testimonial-card{
+    width: 250px; 
+    height: 250px; 
+    padding-top: 100px; 
+    padding-left: 10px; 
+    padding-right: 10px;
+  }
+
+
   .footer-bg{
     background-color: rgb(206, 243, 231);
   }
