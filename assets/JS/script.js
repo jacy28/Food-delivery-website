@@ -1,9 +1,11 @@
 // index.html
-if (window.location.pathname.includes('index.html') || window.location.pathname === "/") {
+const path = window.location.pathname;
+if (path.endsWith("/") || path.endsWith("index.html")) {
   document.addEventListener('click', function () {
     window.location.href = 'login.html';
   });
 }
+
 
 // login.html
 function closeLogin() {
