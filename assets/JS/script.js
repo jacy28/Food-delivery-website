@@ -1,13 +1,16 @@
 // index.html
 document.addEventListener('DOMContentLoaded', function () {
+  // Get the filename from the URL
   const path = window.location.pathname;
+  const fileName = path.substring(path.lastIndexOf('/') + 1);
 
-  if (path.endsWith("/") || path.endsWith("index.html")) {
+  if (fileName === '' || fileName === 'index.html') {
     document.addEventListener('click', function () {
       window.location.href = 'login.html';
     });
   }
 });
+
 
 
 
